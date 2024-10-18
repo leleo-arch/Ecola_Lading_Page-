@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import backgroundImg from '../assets/home.png';  // Importa a imagem de fundo
-import Git from "../assets/github.png";
+import Git from "../assets/hub.png";
 import Linkedin from "../assets/hub.png";
 
 const HeaderWrapper = styled.header`
