@@ -11,7 +11,13 @@ const HeaderWrapper = styled.header`
   color: white;
 
   @media screen and (max-width: 900px) {
-    padding: 10px 0;
+    padding: 1px 0;
+    margin-top: 100px;
+  
+    width: 130%;
+    margin-left: 200px;
+
+
   }
 `;
 
@@ -27,7 +33,9 @@ const Nav = styled.nav`
   @media screen and (max-width: 900px) {
     margin-top: 20px;
     padding: 10px;
-    margin-right: 200px;
+    margin-right: -40px;
+    overflow-y: auto;
+
   }
 `;
 
@@ -35,7 +43,7 @@ const NavLink = styled.a`
   margin: 0 10px;
   text-decoration: none;
   color: white;
-  font-size: 1.1em;
+  font-size: 1em;
   transition: color 0.3s;
 
   &:hover {
