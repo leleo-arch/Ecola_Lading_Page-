@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Git from "../assets/github.png";
+import Git from "../assets/hub.png";
 import Linkedin from "../assets/Linkedin.png";
 
 const HeaderWrapper = styled.header`
@@ -14,15 +14,7 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 2.5em;
-  margin: 0;
-  color: white;
 
-  @media screen and (max-width: 375px) {
-    font-size: 2em;
-  }
-`;
 
 
 const Nav = styled.nav`
