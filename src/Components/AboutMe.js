@@ -19,7 +19,7 @@ const HeaderWrapper = styled.header`
 const Nav = styled.nav`
   margin-top: 40px;
   display: flex;
-  margin-right: 50px;
+  margin-right: 40px;
   justify-content: end;
   align-items: end;
   overflow-x: auto; 
@@ -27,6 +27,7 @@ const Nav = styled.nav`
   @media screen and (max-width: 900px) {
     margin-top: 20px;
     padding: 10px;
+    margin-right: 200px;
   }
 `;
 
@@ -107,6 +108,15 @@ const Title = styled.h2`
   color: #fff;
   margin-bottom: 20px;
   width: 50%;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-right: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    width: 80%;
+    margin-right: 30px;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -115,6 +125,15 @@ const Subtitle = styled.p`
   max-width: 800px;
   line-height: 1.6;
   width: 50%;
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-right: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    width: 80%;
+    margin-right: 30px;
+  }
 `;
 
 const Button = styled.a`
@@ -133,6 +152,15 @@ const Button = styled.a`
   
   &:hover {
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 80%, #945DD6 120%);
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-right: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    width: 80%;
+    margin-right: 30px;
   }
 `;
 
