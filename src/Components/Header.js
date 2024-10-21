@@ -16,7 +16,6 @@ const HeaderWrapper = styled.header`
 
 
 
-
 const Nav = styled.nav`
   margin-top: 40px;
   display: flex;
@@ -90,9 +89,7 @@ const Header = () => (
       <NavLink href="#technologies">Cursos e Atividades</NavLink>
       <NavLink href="#technologies">Depoimentos</NavLink>
       <NavLink href="#technologies">Matriculas</NavLink>
-      <NavLink href="#technologies">Contato</NavLink>
-
-     
+      <NavLink href="#technologies">Contato</NavLink>     
     </Nav>
   </HeaderWrapper>
 );

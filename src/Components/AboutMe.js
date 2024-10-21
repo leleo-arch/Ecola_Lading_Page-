@@ -198,7 +198,7 @@ const AboutMe = () => (
     <Title>Educação Inclusiva e Personalizada para o Futuro do Seu Filho!</Title>
     <Subtitle>
     Matrículas abertas para crianças de 0 a 5 anos. Educação especial, atividades extracurriculares e acolhimento para todos.</Subtitle>
-    <Button href="https://trampos.co/leonardo-arch" download="Curriculo_Leonardo_Soares.pdf">Garanta a Vaga do seu Filho</Button>
+    <Button href="https://api.whatsapp.com/send?phone=5511984858586&text=Sinta-se%20%C3%A0%20vontade%20para%20me%20enviar%20uma%20mensagem!%0A%0A">Garanta a Vaga do seu Filho</Button>
     </AboutWrapper>
 );
 

@@ -73,7 +73,6 @@ const AlunoForm = () => {
     nome: '',
     mesNascimento: '',
     idade: '',
-    pais: '',
     responsaveis: '',
     serieDesejada: '',
   });
@@ -84,8 +83,19 @@ const AlunoForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Formulário Enviado:', formData);
-    // Aqui você pode adicionar a lógica para enviar o formulário
+
+    // Montar a mensagem com os dados do formulário
+    const message = `Nome: ${formData.nome}%0A` +
+                    `Mês de Nascimento: ${formData.mesNascimento}%0A` +
+                    `Idade: ${formData.idade}%0A` +
+                    `Responsáveis: ${formData.responsaveis}%0A` +
+                    `Série Desejada: ${formData.serieDesejada}`;
+
+    // URL de redirecionamento para WhatsApp com os dados do formulário
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5511984858586&text=${message}`;
+
+    // Redirecionar para o WhatsApp
+    window.open(whatsappUrl, '_blank');
   };
 
   return (

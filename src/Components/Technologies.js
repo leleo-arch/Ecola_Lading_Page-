@@ -150,9 +150,9 @@ const TechName2 = styled.p`
 `;
 
 const technologies = [
-  { name: 'Atividades Extracurriculares Inclusas', txt: 'Cursos de Inglês, Libras, Robótica, Inteligência Emocional, Capoeira e dança, sem custo adicional.', icon: 'https://img.icons8.com/color/48/000000/html-5.png' },
-  { name: 'Acolhimento e Desenvolvimento Infantil', txt: 'Sensibilização musical e massagem Shantala para bebês.', icon: 'https://img.icons8.com/color/48/000000/css3.png' },
-  { name: 'Ambiente Seguro e Personalizado', txt: 'Para crianças de 0 a 5 anos, com foco em pais que trabalham fora ou home office, garantindo um espaço seguro, acolhedor e inovador.', icon: 'https://img.icons8.com/color/48/000000/javascript.png' },
+  { name: 'Atividades Extracurriculares Inclusas', txt: 'Cursos de Inglês, Libras, Robótica, Inteligência Emocional, Capoeira e dança, sem custo adicional.', icon: 'https://img.icons8.com/color/48/000000/book.png' },
+  { name: 'Acolhimento e Desenvolvimento Infantil', txt: 'Sensibilização musical e massagem Shantala para bebês.', icon: 'https://img.icons8.com/color/48/000000/children.png' },
+  { name: 'Ambiente Seguro e Personalizado', txt: 'Para crianças de 0 a 5 anos, com foco em pais que trabalham fora ou home office, garantindo um espaço seguro, acolhedor e inovador.', icon: 'https://img.icons8.com/color/48/000000/baby.png' },
 ];
 
 const Technologies = () => (

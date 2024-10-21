@@ -87,9 +87,21 @@ const Pi = styled.p`
 `;
 
 const technologies = [
-  { name: 'Contato e Whatsapp', txt: 'Telefone: (11) 98485-8586', icon: 'https://img.icons8.com/color/48/000000/html-5.png' },
-  { name: 'Email de Contato',txt: 'estacaodopensar@contato.com', icon: 'https://img.icons8.com/color/48/000000/css3.png' },
-  { name: 'Localização', txt: 'Rua Templários, 167 - Vila Formosa', icon: 'https://img.icons8.com/color/48/000000/javascript.png' },
+  { 
+    name: 'Contato e Whatsapp', 
+    txt: 'Telefone: (11) 98485-8586', 
+    icon: 'https://img.icons8.com/color/48/000000/whatsapp.png' // Ícone do WhatsApp
+  },
+  { 
+    name: 'Email de Contato', 
+    txt: 'estacaodopensar@contato.com', 
+    icon: 'https://img.icons8.com/color/48/000000/gmail.png' // Ícone de email (Gmail)
+  },
+  { 
+    name: 'Localização', 
+    txt: 'Rua Templários, 167 - Vila Formosa', 
+    icon: 'https://img.icons8.com/color/48/000000/marker.png' // Ícone de localização (marker)
+  }
 ];
 
 const Technologies = () => (

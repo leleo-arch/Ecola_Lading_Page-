@@ -67,8 +67,8 @@ const Contact = () => {
       <ContactDescription>
         Sinta-se à vontade para me enviar uma mensagem!
       </ContactDescription>
-      <ContactButton href="mailto:leo_deplay@outlook.com.com">Enviar E-mail</ContactButton>
-      <ContactButton href="https://wa.me/5511965531504?text=Ol%C3%A1!">Entrar em Contato</ContactButton>
+      <ContactButton href="estacaodopensar@contato.com">Enviar E-mail</ContactButton>
+      <ContactButton href="https://api.whatsapp.com/send?phone=5511984858586&text=Sinta-se%20%C3%A0%20vontade%20para%20me%20enviar%20uma%20mensagem!%0A%0A">Entrar em Contato</ContactButton>
 
       {/* Google Maps iframe */}
       <MapWrapper>
