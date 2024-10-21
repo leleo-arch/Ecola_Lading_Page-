@@ -1,8 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import backgroundImg from '../assets/home.png';  // Importa a imagem de fundo
-import Git from "../assets/hub.png";
-import Linkedin from "../assets/hub.png";
+
 
 const HeaderWrapper = styled.header`
   text-align: center;
@@ -180,19 +179,13 @@ const AboutMe = () => (
     <HeaderWrapper id="Nav">
 
     <Nav>
-    <NavLink2 href="https://github.com/leleo-arch">
-        <Image src={Git} alt="GitHub" />
-      </NavLink2>
-      <NavLink2 href="https://www.linkedin.com/in/leonardo-soares-1842b32b0/">
-        <Image src={Linkedin} alt="LinkedIn" />
-      </NavLink2>
+
       <NavLink href="#projects">Início</NavLink>
-      <NavLink href="#about">Escola</NavLink>
-      <NavLink href="#contact">Diferenciais</NavLink>
-      <NavLink href="#technologies">Cursos e Atividades</NavLink>
-      <NavLink href="#technologies">Depoimentos</NavLink>
-      <NavLink href="#technologies">Matriculas</NavLink>
-      <NavLink href="#technologies">Contato</NavLink>
+      <NavLink href="#depo">Diferenciais</NavLink>
+      <NavLink href="#depo">Cursos e Atividades</NavLink>
+      <NavLink href="#depoimento">Depoimentos</NavLink>
+      <NavLink href="#Form">Matriculas</NavLink>
+      <NavLink href="#contact">Contato</NavLink>
     </Nav>
   </HeaderWrapper>
     <Title>Educação Inclusiva e Personalizada para o Futuro do Seu Filho!</Title>

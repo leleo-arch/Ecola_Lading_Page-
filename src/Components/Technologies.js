@@ -156,7 +156,7 @@ const technologies = [
 ];
 
 const Technologies = () => (
-  <TechnologiesWrapper id="technologies">
+  <TechnologiesWrapper id="depo">
     <Title2>Acolhimento e Segurança em Cada Detalhe</Title2>
     <Title>Inclusão e Educação de Mãos Dadas</Title>
     <P>Tecnologias Assistivas para Apoiar Cada Criança. Desenvolvimento Completo para o Futuro!</P>

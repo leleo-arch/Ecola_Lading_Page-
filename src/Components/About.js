@@ -99,7 +99,7 @@ const AlunoForm = () => {
   };
 
   return (
-    <FormSection>
+    <FormSection id='Form'>
       <FormTitle>Prontos para conhecer melhor a nossa escola?</FormTitle>
       <FormTitle2>Preencha o formulário e teremos prazer em ajudar.</FormTitle2>
       <form onSubmit={handleSubmit}>

@@ -39,7 +39,7 @@ const technologies = [
 ];
 
 const Technologies = () => (
-  <TechnologiesWrapper id="technologies">
+  <TechnologiesWrapper id="depoimento">
     {technologies.map((tech, index) => (
         <TechItem key={index} index={index}>
 
