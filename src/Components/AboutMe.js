@@ -56,33 +56,6 @@ const NavLink = styled.a`
   }
 `;
 
-const NavLink2 = styled.a`
-  margin: 0 5px;
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-  transition: color 0.3s;
-
-  &:hover {
-    color: #61dafb;
-  }
-
-  @media screen and (max-width: 375px) {
-    font-size: 0.9em;
-  }
-`;
-
-const Image = styled.img`
-  width: 20px;
-  height: 20px;
-
-  @media screen and (max-width: 375px) {
-    width: 20px;
-    height: 20px;
-  }
-`;
-
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
