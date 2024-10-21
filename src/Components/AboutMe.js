@@ -24,17 +24,18 @@ const HeaderWrapper = styled.header`
 const Nav = styled.nav`
   margin-top: 40px;
   display: flex;
-  margin-right: 40px;
   justify-content: end;
-  align-items: end;
-  overflow-x: auto; 
-  white-space: nowrap; 
+  align-items: center;
+  overflow-x: auto;  // Adiciona o overflow horizontal
+  white-space: nowrap;  // Evita quebra de linha nos itens do menu
+
   @media screen and (max-width: 900px) {
     margin-top: 20px;
     padding: 10px;
-    margin-right: -40px;
-    overflow-y: auto;
+  }
 
+  @media screen and (max-width: 768px) {
+    justify-content: start;  // Alinha os itens à esquerda
   }
 `;
 
