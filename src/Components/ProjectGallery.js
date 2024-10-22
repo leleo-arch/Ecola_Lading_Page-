@@ -22,7 +22,6 @@ background-image: url(${backgroundImg});  // Define a imagem de fundo
   background-repeat: no-repeat;  // Evita que a imagem se repita  justify-content: center;
   padding: 300px 20px;
   overflow-y: 10px;
-  background-color: white;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
 `;

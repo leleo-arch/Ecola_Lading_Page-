@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import backgroundImg from '../assets/nuvem.png';  // Importa a imagem de fundo
+
 
 const FormSection = styled.section`
   padding: 2rem;
-  background-color: white;
-  border-radius: 8px;
+ background-color: white;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+  width: 100%;
+`;
+
+const Nav = styled.section`
+  padding: 2rem;
   max-width: 600px;
   margin: 2rem auto;
   text-align: left;
 `;
+
 
 const FormTitle = styled.h2`
   font-size: 2rem;
@@ -100,6 +110,7 @@ const AlunoForm = () => {
 
   return (
     <FormSection id='Form'>
+      <Nav></Nav>
       <FormTitle>Prontos para conhecer melhor a nossa escola?</FormTitle>
       <FormTitle2>Preencha o formulário e teremos prazer em ajudar.</FormTitle2>
       <form onSubmit={handleSubmit}>

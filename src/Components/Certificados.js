@@ -17,7 +17,7 @@ flex-direction: column;
 justify-content: center;
 gap:-10px;
   padding: 30px 20px;
-  background-color: white;
+  background-color: #e8e8e8;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
 `;
@@ -49,10 +49,10 @@ const TechGrid = styled.div`
 `;
 
 const TechItem = styled.div`
-    background: linear-gradient(270deg, #945DD6  0%, #6978D1 80%, #945DD6 120%);
+    background: white;
     border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgb(255, 255, 255);
+  box-shadow: 0 1px 1px black;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 300px;
   text-align: center;
