@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import backgroundImg from '../assets/nuvem.png';  // Importa a imagem de fundo
-
 
 const FormSection = styled.section`
   padding: 2rem;
