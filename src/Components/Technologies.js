@@ -121,7 +121,8 @@ const TechItem = styled.div`
 const TechIcon = styled.img`
   max-width: 100%;
   height: auto;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
+  margin-right: 200px;
 `;
 
 const TechName = styled.p`
