@@ -28,6 +28,7 @@ const Nav = styled.nav`
   align-items: center;
   overflow-x: auto;  // Adiciona o overflow horizontal
   white-space: nowrap;  // Evita quebra de linha nos itens do menu
+  
 
   @media screen and (max-width: 900px) {
     margin-top: 20px;
@@ -69,19 +70,23 @@ const fadeIn = keyframes`
 
 const AboutWrapper = styled.section`
   padding: 120px 30px;
-margin-top:-180px;
-  background-image: url(${backgroundImg});  // Define a imagem de fundo
-  background-size: cover;  // Faz com que a imagem cubra todo o contêiner
-  background-position: center;  // Centraliza a imagem
-  background-repeat: no-repeat;  // Evita que a imagem se repita  justify-content: center;
+  margin-top: -180px;
+  background-image: 
+    linear-gradient(230deg, rgba(233, 17, 169, 0.5) 30%, rgba(27, 72, 170, 0.0)55%, rgba(233, 17, 169, 0) 200%),  // Degradê com transparência
+    url(${backgroundImg});  // Imagem de fundo
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
   display: flex;
-justify-content: start;
-align-items: end;
+  justify-content: start;
+  align-items: end;
 `;
+
 
 const Title = styled.h2`
 
@@ -118,18 +123,18 @@ const Subtitle = styled.p`
 `;
 
 const Button = styled.a`
-  width: 50%;
+  width: 35%;
   border-radius: 25px;
-  border: solid 2px yellowgreen;
+  border: solid 3px yellowgreen;
   height: 50px;
-  margin-left: 10px;
+  margin-right: 85px;
   color: white;
   font-size: 20px;
   margin-top: 10px;
   text-align: center;
   line-height: 50px;
   text-decoration: none;
-  color: white;
+  color: blanchedalmond;
   
   &:hover {
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 80%, #945DD6 120%);
