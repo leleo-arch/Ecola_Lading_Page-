@@ -22,7 +22,7 @@ const TechnologiesWrapper = styled.section`
 `;
 
 const Title = styled.h4`
-  font-size: 2.5em;
+  font-size: 2.9em;
   color: black;
   margin-bottom: 10px;
 
@@ -36,7 +36,7 @@ const Title = styled.h4`
 `;
 
 const Title2 = styled.h1`
-  font-size: 2.5em;
+  font-size: 2em;
   color: #945DD6;
   margin-bottom: 10px;
 
@@ -91,12 +91,13 @@ const TechGrid = styled.div`
 `;
 
 const TechItem = styled.div`
-  background: linear-gradient(270deg, #945DD6 0%, #6978D1 80%, #945DD6 120%);
-  border-radius: 8px;
+  background: linear-gradient(-220deg, #1b48aa 40%,  #e911a9 90%, #e911a9 200%);
+  border-radius: 16px;
   padding: 20px;
   box-shadow: 0 2px 8px rgb(255, 255, 255);
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 190px;
+  width: 240px;
+  height: 200px;
   text-align: center;
   animation: ${fadeIn} 0.5s ease forwards;
   animation-delay: ${(props) => props.index * 0.1}s;
@@ -120,15 +121,15 @@ const TechItem = styled.div`
 const TechIcon = styled.img`
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 `;
 
 const TechName = styled.p`
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
 
   @media (max-width: 768px) {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 
   @media (max-width: 480px) {
@@ -137,8 +138,9 @@ const TechName = styled.p`
 `;
 
 const TechName2 = styled.p`
-  font-size: 1em;
   color: white;
+  font-size: 0.9em;
+
 
   @media (max-width: 768px) {
     font-size: 0.9em;

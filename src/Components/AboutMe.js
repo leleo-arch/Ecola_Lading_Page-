@@ -118,13 +118,13 @@ const Subtitle = styled.p`
 `;
 
 const Button = styled.a`
-  background: linear-gradient(270deg, #6978D1 0%, #6978D1 66.67%, #945DD6 100%);
   width: 50%;
   border-radius: 25px;
+  border: solid 2px yellowgreen;
   height: 50px;
   margin-left: 10px;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 10px;
   text-align: center;
   line-height: 50px;
