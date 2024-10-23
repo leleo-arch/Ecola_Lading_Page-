@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import backgroundImg from '../assets/home.png';  // Importa a imagem de fundo
 
-
 const HeaderWrapper = styled.header`
   text-align: center;
   padding: 50px 0;
@@ -72,7 +71,7 @@ const AboutWrapper = styled.section`
   padding: 120px 30px;
   margin-top: -180px;
   background-image: 
-    linear-gradient(230deg,rgba(128, 0, 128, 0.9) 30%, rgba(27, 72, 170, 0.0)55%, rgba(233, 17, 169, 0) 200%),  // Degradê com transparência
+    linear-gradient(230deg, rgba(156, 0, 249, 0.8) 30%, rgba(27, 72, 170, 0.0)55%, rgba(233, 17, 169, 0) 200%),  // Degradê com transparência
     url(${backgroundImg});  // Imagem de fundo
   background-size: cover;
   background-position: center;
@@ -125,7 +124,7 @@ const Subtitle = styled.p`
 const Button = styled.a`
   width: 35%;
   border-radius: 25px;
-  border: solid 3px yellowgreen;
+  border: solid 3px #ffe500;
   height: 50px;
   margin-right: 85px;
   color: white;
@@ -134,7 +133,7 @@ const Button = styled.a`
   text-align: center;
   line-height: 50px;
   text-decoration: none;
-  color: blanchedalmond;
+  color: #ffe500;
   
   &:hover {
     background: linear-gradient(270deg, #13ADC7 0%, #6978D1 80%, #945DD6 120%);
@@ -171,6 +170,7 @@ const AboutMe = () => (
     <Subtitle>
     Matrículas abertas para crianças de 0 a 5 anos. Educação especial, atividades extracurriculares e acolhimento para todos.</Subtitle>
     <Button href="https://api.whatsapp.com/send?phone=5511984858586&text=Sinta-se%20%C3%A0%20vontade%20para%20me%20enviar%20uma%20mensagem!%0A%0A">Garanta a Vaga do seu Filho</Button>
+
     </AboutWrapper>
 );
 

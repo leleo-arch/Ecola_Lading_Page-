@@ -17,6 +17,7 @@ function App() {
 
       <GlobalStyle />
       <AboutMe/>
+    
       <Technologies/>
       <ProjectGallery />
       <About/>
