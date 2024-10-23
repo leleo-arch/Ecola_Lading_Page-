@@ -72,7 +72,7 @@ const AboutWrapper = styled.section`
   padding: 120px 30px;
   margin-top: -180px;
   background-image: 
-    linear-gradient(230deg, rgba(700, 4,347, 0.6) 30%, rgba(27, 72, 170, 0.0)55%, rgba(233, 17, 169, 0) 200%),  // Degradê com transparência
+    linear-gradient(230deg,rgba(128, 0, 128, 0.9) 30%, rgba(27, 72, 170, 0.0)55%, rgba(233, 17, 169, 0) 200%),  // Degradê com transparência
     url(${backgroundImg});  // Imagem de fundo
   background-size: cover;
   background-position: center;
