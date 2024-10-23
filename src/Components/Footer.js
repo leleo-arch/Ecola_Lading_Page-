@@ -1,18 +1,9 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import backgroundImg from '../assets/COMPLETO.png';  // Importa a imagem de fundo
 import footerImg1 from '../assets/7.png';  // Primeira imagem do footer
 import footerImg2 from '../assets/8.png';  // Segunda imagem do footer
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+
 
 const TechnologiesWrapper = styled.section`
   display: flex;
