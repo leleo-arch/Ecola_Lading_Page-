@@ -13,7 +13,7 @@ const TechnologiesWrapper = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 620px 100px;
+  padding: 600px 100px;
   overflow-y: 10px;
   margin-top: 120px;
   text-align: center;
