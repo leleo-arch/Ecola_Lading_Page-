@@ -4,6 +4,7 @@ import ContactForm from './Components/ContactForm';
 import Technologies from './Components/Technologies';
 import About from './Components/About';
 import Certificado from './Components/Certificados';
+import Footer from './Components/Footer'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Certificado/>
       <ContactForm />
+      <Footer/>
     </Container>
   );
 }

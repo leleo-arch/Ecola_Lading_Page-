@@ -2,9 +2,9 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 // Importando os ícones locais
-import whatsappIcon from '../assets/1.png'; // Caminho do ícone do WhatsApp
-import emailIcon from '../assets/2.png'; // Caminho do ícone de Email
-import locationIcon from '../assets/3.png'; // Caminho do ícone de localização
+import whatsappIcon from '../assets/4.png'; // Caminho do ícone do WhatsApp
+import emailIcon from '../assets/5.png'; // Caminho do ícone de Email
+import locationIcon from '../assets/6.png'; // Caminho do ícone de localização
 
 const fadeIn = keyframes`
   from {

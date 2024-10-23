@@ -51,13 +51,13 @@ const FormTitle = styled.h2`
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #945DD6;
+  color: #e911a9;
 `;
 
 const FormTitle2 = styled.h2`
   font-size: 1rem;
   text-align: center;
-  color: #6978D1;
+  color: #e911a9;
 `;
 
 const FormGroup = styled.div`
@@ -92,7 +92,7 @@ const Select = styled.select`
 `;
 
 const Button = styled.button`
-  background-color: #007bff;
+  background-color: #e911a9;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -144,7 +144,7 @@ const AlunoForm = () => {
         <FormTitle2>Preencha o formulário e teremos prazer em ajudar.</FormTitle2>
         <form onSubmit={handleSubmit}>
           <FormGroup>
-            <Label>Nome do Aluno</Label>
+            <Label></Label>
             <Input
               type="text"
               name="nome"
@@ -156,7 +156,7 @@ const AlunoForm = () => {
           </FormGroup>
 
           <FormGroup>
-            <Label>Mês de Nascimento</Label>
+            <Label></Label>
             <Input
               type="text"
               name="mesNascimento"
@@ -168,7 +168,7 @@ const AlunoForm = () => {
           </FormGroup>
 
           <FormGroup>
-            <Label>Idade</Label>
+            <Label></Label>
             <Input
               type="number"
               name="idade"
@@ -179,7 +179,7 @@ const AlunoForm = () => {
             />
           </FormGroup>
           <FormGroup>
-            <Label>Responsáveis</Label>
+            <Label></Label>
             <Input
               type="text"
               name="responsaveis"
@@ -191,7 +191,7 @@ const AlunoForm = () => {
           </FormGroup>
 
           <FormGroup>
-            <Label>Série Desejada</Label>
+            <Label></Label>
             <Select
               name="serieDesejada"
               value={formData.serieDesejada}
