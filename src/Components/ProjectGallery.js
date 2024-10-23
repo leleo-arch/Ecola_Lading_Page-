@@ -20,7 +20,7 @@ background-image: url(${backgroundImg});  // Define a imagem de fundo
   background-size: cover;  // Faz com que a imagem cubra todo o contêiner
   background-position: center;  // Centraliza a imagem
   background-repeat: no-repeat;  // Evita que a imagem se repita  justify-content: center;
-  padding: 300px 20px;
+  padding: 450px 20px;
   overflow-y: 10px;
   text-align: center;
   animation: ${fadeIn} 1s ease forwards;
