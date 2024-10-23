@@ -1,13 +1,42 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import minhaImagem from '../assets/nuvem.png'
 
 const FormSection = styled.section`
   padding: 2rem;
- background-color: white;
-  max-width: 600px;
+  background-color: white;
+  max-width: 1200px; /* Aumenta o tamanho máximo do contêiner */
   margin: 2rem auto;
-  text-align: left;
-  width: 100%;
+  display: flex; /* Define o layout flex */
+  justify-content: space-between; /* Distribui os itens */
+  align-items: center; /* Centraliza verticalmente */
+  width: 80%;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Torna a coluna para mobile */
+    text-align: center; /* Centraliza texto no mobile */
+  }
+`;
+
+const ImageWrapper = styled.div`
+  flex: 1; /* Atribui o mesmo peso à imagem */
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Aplica um efeito de borda arredondada */
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+`;
+
+const FormWrapper = styled.div`
+  flex: 1; /* Atribui o mesmo peso ao formulário */
 `;
 
 const Nav = styled.section`
@@ -15,8 +44,8 @@ const Nav = styled.section`
   max-width: 600px;
   margin: 2rem auto;
   text-align: left;
+  margin-right: 40px;
 `;
-
 
 const FormTitle = styled.h2`
   font-size: 2rem;
@@ -24,11 +53,13 @@ const FormTitle = styled.h2`
   text-align: center;
   color: #945DD6;
 `;
+
 const FormTitle2 = styled.h2`
   font-size: 1rem;
   text-align: center;
   color: #6978D1;
 `;
+
 const FormGroup = styled.div`
   margin-bottom: 1rem;
 `;
@@ -92,95 +123,96 @@ const AlunoForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Montar a mensagem com os dados do formulário
     const message = `Nome: ${formData.nome}%0A` +
                     `Mês de Nascimento: ${formData.mesNascimento}%0A` +
                     `Idade: ${formData.idade}%0A` +
                     `Responsáveis: ${formData.responsaveis}%0A` +
                     `Série Desejada: ${formData.serieDesejada}`;
 
-    // URL de redirecionamento para WhatsApp com os dados do formulário
     const whatsappUrl = `https://api.whatsapp.com/send?phone=5511984858586&text=${message}`;
-
-    // Redirecionar para o WhatsApp
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <FormSection id='Form'>
-      <Nav></Nav>
-      <FormTitle>Prontos para conhecer melhor a nossa escola?</FormTitle>
-      <FormTitle2>Preencha o formulário e teremos prazer em ajudar.</FormTitle2>
-      <form onSubmit={handleSubmit}>
-        <FormGroup>
-          <Label>Nome do Aluno</Label>
-          <Input
-            type="text"
-            name="nome"
-            value={formData.nome}
-            onChange={handleChange}
-            placeholder="Digite o nome do aluno"
-            required
-          />
-        </FormGroup>
+    <FormSection id="Form">
+      <ImageWrapper>
+        <img src={minhaImagem} alt="Imagem ilustrativa" />
+      </ImageWrapper>
+      <FormWrapper>
+        <Nav></Nav>
+        <FormTitle>Prontos para conhecer melhor a nossa escola?</FormTitle>
+        <FormTitle2>Preencha o formulário e teremos prazer em ajudar.</FormTitle2>
+        <form onSubmit={handleSubmit}>
+          <FormGroup>
+            <Label>Nome do Aluno</Label>
+            <Input
+              type="text"
+              name="nome"
+              value={formData.nome}
+              onChange={handleChange}
+              placeholder="Digite o nome do aluno"
+              required
+            />
+          </FormGroup>
 
-        <FormGroup>
-          <Label>Mês de Nascimento</Label>
-          <Input
-            type="text"
-            name="mesNascimento"
-            value={formData.mesNascimento}
-            onChange={handleChange}
-            placeholder="Digite o mês de nascimento"
-            required
-          />
-        </FormGroup>
+          <FormGroup>
+            <Label>Mês de Nascimento</Label>
+            <Input
+              type="text"
+              name="mesNascimento"
+              value={formData.mesNascimento}
+              onChange={handleChange}
+              placeholder="Digite o mês de nascimento"
+              required
+            />
+          </FormGroup>
 
-        <FormGroup>
-          <Label>Idade</Label>
-          <Input
-            type="number"
-            name="idade"
-            value={formData.idade}
-            onChange={handleChange}
-            placeholder="Digite a idade"
-            required
-          />
-        </FormGroup>
-        <FormGroup>
-          <Label>Responsáveis</Label>
-          <Input
-            type="text"
-            name="responsaveis"
-            value={formData.responsaveis}
-            onChange={handleChange}
-            placeholder="Digite os responsáveis"
-            required
-          />
-        </FormGroup>
+          <FormGroup>
+            <Label>Idade</Label>
+            <Input
+              type="number"
+              name="idade"
+              value={formData.idade}
+              onChange={handleChange}
+              placeholder="Digite a idade"
+              required
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label>Responsáveis</Label>
+            <Input
+              type="text"
+              name="responsaveis"
+              value={formData.responsaveis}
+              onChange={handleChange}
+              placeholder="Digite os responsáveis"
+              required
+            />
+          </FormGroup>
 
-        <FormGroup>
-          <Label>Série Desejada</Label>
-          <Select
-            name="serieDesejada"
-            value={formData.serieDesejada}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Selecione a série</option>
-            <option value="1a série">1ª série</option>
-            <option value="2a série">2ª série</option>
-            <option value="3a série">3ª série</option>
-            <option value="4a série">4ª série</option>
-            <option value="5a série">5ª série</option>
-            <option value="6a série">6ª série</option>
-            <option value="7a série">7ª série</option>
-            <option value="8a série">8ª série</option>
-          </Select>
-        </FormGroup>
+          <FormGroup>
+            <Label>Série Desejada</Label>
+            <Select
+              name="serieDesejada"
+              value={formData.serieDesejada}
+              onChange={handleChange}
+              required
+            >
+              <option value="">Selecione a série</option>
+              <option value="1a série">1ª série</option>
+              <option value="2a série">2ª série</option>
+              <option value="3a série">3ª série</option>
+              <option value="4a série">4ª série</option>
+              <option value="5a série">5ª série</option>
+              <option value="6a série">6ª série</option>
+              <option value="7a série">7ª série</option>
+              <option value="8a série">8ª série</option>
+            </Select>
+          </FormGroup>
 
-        <Button type="submit">Enviar Cadastro</Button>
-      </form>
+          <Button type="submit">Enviar Cadastro</Button>
+        </form>
+      </FormWrapper>
     </FormSection>
   );
 };

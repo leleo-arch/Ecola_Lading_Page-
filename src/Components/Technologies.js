@@ -1,4 +1,8 @@
+import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import bookIcon from '../assets/1.png';
+import childrenIcon from '../assets/2.png';
+import babyIcon from '../assets/3.png'; // Exemplo de importação local
 
 const fadeIn = keyframes`
   from {
@@ -22,7 +26,7 @@ const TechnologiesWrapper = styled.section`
 `;
 
 const Title = styled.h4`
-  font-size: 2.9em;
+  font-size: 2.5em;
   color: black;
   margin-bottom: 10px;
 
@@ -41,35 +45,28 @@ const Title2 = styled.h1`
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   
   @media (max-width: 480px) {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 `;
 
 const P = styled.p`
   font-size: 1.3em;
   color: #945DD6;
-  margin-bottom: 50px;
   width: 60%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-
+  margin: 0 auto 30px;
 
   @media (max-width: 768px) {
     width: 80%;
     font-size: 1em;
-    margin-bottom: 20px;
-
   }
 
   @media (max-width: 480px) {
     width: 100%;
-    font-size: 1em;
-    margin-bottom: 20px;
-
+    font-size: 0.9em;
   }
 `;
 
@@ -91,14 +88,14 @@ const TechGrid = styled.div`
 `;
 
 const TechItem = styled.div`
-  background: linear-gradient(-220deg, #1b48aa 40%,  #e911a9 90%, #e911a9 200%);
+  background: linear-gradient(-220deg, #1b48aa 30%, #e911a9 100%, #e911a9 200%);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgb(255, 255, 255);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
   transition: transform 0.3s, box-shadow 0.3s;
-  width: 240px;
+  width: 220px;
   height: 200px;
-  text-align: center;
+  text-align: start;
   animation: ${fadeIn} 0.5s ease forwards;
   animation-delay: ${(props) => props.index * 0.1}s;
 
@@ -108,54 +105,72 @@ const TechItem = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 150px;
+    width: 160px;
+    height: 180px;
     padding: 15px;
   }
 
   @media (max-width: 480px) {
     width: 120px;
+    height: 150px;
     padding: 10px;
   }
 `;
 
 const TechIcon = styled.img`
   max-width: 100%;
-  height: auto;
-  margin-bottom: -15px;
-  margin-right: 200px;
+  height: 60px;
+  margin-bottom: -10px;
+  margin-right: 150px;
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const TechName = styled.p`
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
 
   @media (max-width: 768px) {
-    font-size: 0.9em;
+    font-size: 0.7;
   }
 
   @media (max-width: 480px) {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 `;
 
 const TechName2 = styled.p`
   color: white;
-  font-size: 0.9em;
-
+  font-size: 0.8em;
 
   @media (max-width: 768px) {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   @media (max-width: 480px) {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 `;
 
 const technologies = [
-  { name: 'Atividades Extracurriculares Inclusas', txt: 'Cursos de Inglês, Libras, Robótica, Inteligência Emocional, Capoeira e dança, sem custo adicional.', icon: 'https://img.icons8.com/color/48/000000/book.png' },
-  { name: 'Acolhimento e Desenvolvimento Infantil', txt: 'Sensibilização musical e massagem Shantala para bebês.', icon: 'https://img.icons8.com/color/48/000000/children.png' },
-  { name: 'Ambiente Seguro e Personalizado', txt: 'Para crianças de 0 a 5 anos, com foco em pais que trabalham fora ou home office, garantindo um espaço seguro, acolhedor e inovador.', icon: 'https://img.icons8.com/color/48/000000/baby.png' },
+  { 
+    name: 'Atividades Extracurriculares Inclusas', 
+    txt: 'Cursos de Inglês, Libras, Robótica, Inteligência Emocional, Capoeira e dança, sem custo adicional.', 
+    icon: bookIcon // Caminho local
+  },
+  { 
+    name: 'Acolhimento e Desenvolvimento Infantil', 
+    txt: 'Sensibilização musical e massagem Shantala para bebês.', 
+    icon: childrenIcon // Caminho local
+  },
+  { 
+    name: 'Ambiente Seguro e Personalizado', 
+    txt: 'Para crianças de 0 a 5 anos, com foco em pais que trabalham fora ou home office, garantindo um espaço seguro, acolhedor e inovador.', 
+    icon: babyIcon // Caminho local
+  }
 ];
 
 const Technologies = () => (
