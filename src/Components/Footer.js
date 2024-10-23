@@ -31,7 +31,7 @@ const Footer = styled.footer`
   margin-top: 50px;
   color: white;
   margin-bottom: -100px;
-  margin-right: 1px;
+  margin-right: -5px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -49,7 +49,7 @@ const FooterImageLink = styled.a`
 `;
 
 const FooterImage = styled.img`
-  max-width: 220px;
+  max-width: 200px;
   height: 50px;
 
   @media (max-width: 768px) {
